@@ -1,0 +1,14 @@
+<button style="background-color:blue;font-size:14pt; color:aliceblue; padding-inline:2rem; padding-block: 1rem;" title="listagem" (click)="listagem()">Listagem</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.name }}</td>
+    </tr>
+  </tbody>
+</table>
